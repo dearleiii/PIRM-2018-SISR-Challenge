@@ -1,1 +1,9 @@
+TASK AND EVALUATION
+The Task 4x super-resolution of images which were down-sampled with a bicubic kernel.
 
+Evaluation The perception-distortion plane will be divided into three regions defined by thresholds on the RMSE. In each region, the winning algorithm is the one that achieves the best perceptual quality.
+
+Perceptual quality will be quantified by combining the quality measures of [Ma et al.] and [NIQE] by
+Perceptual score =1/2 * ((10 − Ma) + NIQE).
+Notice that a lower perceptual score indicates better perceptual quality.
+See [Blau and Michaeli, CVPR'18] for an explanation of the rationale behind this evaluation method.
