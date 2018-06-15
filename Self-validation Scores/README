@@ -7,3 +7,8 @@ Perceptual quality will be quantified by combining the quality measures of [Ma e
 Perceptual score =1/2 * ((10 − Ma) + NIQE).
 Notice that a lower perceptual score indicates better perceptual quality.
 See [Blau and Michaeli, CVPR'18] for an explanation of the rationale behind this evaluation method.
+
+
+EnhancedNet-DIV2k-validation801-900: 
+Your perceptual score is: 3.4969
+Your RMSE is: 13.6505
