@@ -8,6 +8,9 @@ Perceptual score =1/2 * ((10 − Ma) + NIQE).
 Notice that a lower perceptual score indicates better perceptual quality.
 See [Blau and Michaeli, CVPR'18] for an explanation of the rationale behind this evaluation method.
 
+EnhancedNet-PIRM2018-validation1-99: 
+Your perceptual score is: 2.6876
+Your RMSE is: 15.9853
 
 EnhancedNet-DIV2k-validation801-900: 
 Your perceptual score is: 3.4969
