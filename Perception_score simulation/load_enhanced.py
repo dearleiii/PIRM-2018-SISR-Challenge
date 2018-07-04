@@ -94,3 +94,48 @@ for i in range(len(transformed_dataset)):
     sample = transformed_dataset[i+1]
     print('Rescale image: ', i+1, sample['image'].size())
     
+class CNN(nn.Module):
+    def __init__(self):
+        super(CNN, self).__init__()        # can be super(CNN), or super(Net), difference?
+        self.conv1 = nn.Sequential (
+            nn.Conv2d(
+                in_channels=1,
+                out_channels=16,
+                kernel_size=5,
+                stride = 1,
+                padding = 2,               # for same width and length for img after conv2d
+                # input: (1, 28, 28) -> output(16, 28, 28)
+            ),
+c            nn.ReLU(),                     # activation function
+            nn.MaxPool2d(kernel_size = 2), # choose max value in 2*2 area, output shape (16, 14, 14)
+        )
+        self.conv2 = nn.Sequential(
+            nn.Conv2d(16, 32, 5, 1, 2),    # (16, 14, 14) -> (32, 14, 14)
+            nn.ReLU(),
+            nn.MaxPool2d(2),               # (32, 7, 7)
+        )
+
+        self.regressor = nn.Sequential(
+            # what's nn.Dropout used for?
+            nn.Linear(32 * 7 * 7, 10),  # fully connected layer: output 10 classes
+            # what's nn.BatchNormld used for?
+            # what's ReLu used for here?
+            nn.Linear(10, 10),
+            nn.Linear(10, 1),
+        )
+
+    def forward(self, x):
+        x = self.conv1(x)
+        x = self.conv2(x)
+        x = x.view(x.size(0), -1)
+        output = self.regressor(x)
+        return output, x
+    
+cnn = CNN()
+print(cnn)
+
+optimizer = torch.optim.Adam(cnn.parameters(), lr = LR)
+loss_func = nn.MSEloss()
+
+
+# Train the model
