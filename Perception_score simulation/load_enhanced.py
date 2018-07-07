@@ -9,6 +9,10 @@ matplotlib.use('Agg')
 from skimage import io, transform
 import numpy as np
 import matplotlib.pyplot as plt
+
+import torch
+import torch.nn as nn
+import torchvision
 from torch.utils.data import Dataset, DataLoader
 from torchvision import transforms, utils
 
@@ -84,17 +88,17 @@ class ToTensor(object):
 
 fig = plt.figure()
 
-transformed_dataset = EnhancedDataset(root_dir = 'data_load_totu/enhanced_train/',
+transformed_dataset = EnhancedDataset(root_dir = '/home/home2/leichen/SuperResolutor/Dataset/Enhanced_train/',
                                       transform=transforms.Compose([
                                           Rescale((1020, 2040)),
                                           ToTensor()
                                       ]))
 
-"""
+
 for i in range(len(transformed_dataset)):
     sample = transformed_dataset[i+1]
     print('Rescale image: ', i+1, sample['image'].size())
-"""
+
 
 class CNN(nn.Module):
 
@@ -118,24 +122,24 @@ class CNN(nn.Module):
                                            # Can set up maxPool2d differently, ex. MaxPool2d(kernel_size=2, stride=2, padding=0)
         )
 
-    self.conv2 = nn.Sequential(
-        # Conpute the activation of the second convolution
-        # Size changes from (18, 510, 2010) to (36, 255, 510)
-        nn.Conv2d(18, 36, 5, 1, 2),        # (18, 510, 1020) -> (36, 510, 1020)
-        nn.ReLU(),
-        nn.MaxPool2d(2),                   # (36, 255, 510)
-    )
-
-    self.regressor = nn.Sequential(
-        # what's nn.Dropout used for?
-        nn.Linear(36 * 255 * 510, 64),  
-        # what's nn.BatchNormld used for?
-        # what's ReLu used for here?
-        nn.ReLU(),
-        nn.Linear(64, 64),
-        nn.Linear(64, 10),
-        nn.Linear(10, 1),
-    )
+        self.conv2 = nn.Sequential(
+            # Conpute the activation of the second convolution
+            # Size changes from (18, 510, 2010) to (36, 255, 510)
+            nn.Conv2d(18, 36, 5, 1, 2),        # (18, 510, 1020) -> (36, 510, 1020)
+            nn.ReLU(),
+            nn.MaxPool2d(2),                   # (36, 255, 510)
+        )
+        
+        self.regressor = nn.Sequential(
+            # what's nn.Dropout used for?
+            nn.Linear(36 * 255 * 510, 64),  
+            # what's nn.BatchNormld used for?
+            # what's ReLu used for here?
+            nn.ReLU(),
+            nn.Linear(64, 64),
+            nn.Linear(64, 10),
+            nn.Linear(10, 1),
+        )
 
     def forward(self, x):
         x = self.conv1(x)
@@ -156,8 +160,8 @@ cnn = CNN()
 print(cnn)
 
 # Wrap the loss & optimization functions to find CNN the right weights 
-optimizer = torch.optim.Adam(cnn.parameters(), lr = LR)
-loss_func = nn.MSEloss()
+optimizer = torch.optim.Adam(cnn.parameters(), lr = 0.001)
+loss_func = nn.MSELoss()
 
 
 # Train the model
@@ -169,6 +173,14 @@ def get_train_loader(batch_size):
     train_loader = torch.utils.data.DataLoader(transformed_dataset, batch_size = batch_size,
                                                shuffle=True, num_workers=2 )# sampler=train_sampler, num_workers=2)
     return(train_loader)
+
+import scipy.io as sio
+mat_content = sio.loadmat('F_per_Enhancednet-DIV2K80.mat')
+scores_arr = mat_content['F_per_array']
+scores_torch = torch.from_numpy(scores_arr)
+
+print(scores_arr.shape)
+
 
 import time
 
@@ -235,5 +247,5 @@ def trainNet(net, batch_size, n_epochs, learning_rate):
 
 # To actually train the NN
 CNN = CNN()
-trainNet(CNN, batch_size = 32, n_epochs = 5, learning_rate = 0.001)
+# trainNet(CNN, batch_size = 32, n_epochs = 5, learning_rate = 0.001)
 
