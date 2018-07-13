@@ -11,8 +11,8 @@ Reference:
 
 
 
-## Progress 
-#### 1. Build Approximator 
+## Progress && Important dates
+#### 1. Build Approximator Ddl: 07/13 Friday 
   - Imporve Batch_size ~ 100 batched 
     -  Based on prior knowledge that batch_size ~ 100 produce good training results 
   - Analogy to the EDSR Discriminator code 
@@ -21,13 +21,20 @@ Reference:
     - Check & Confirm structure is Differentiale 
   - Check training result 
     - Continuous score 
-#### 2. Evaluate Approximator 
+#### 2. Evaluate Approximator Ddl: 07/14 Saturday 
   - Scattor plot for training result vs. original results 
   - Link scatter plot results with MSE score 
   - Normalize MESloss() i.e./800
-#### 3. Test Approximator 
+#### 3. Test Approximator Ddl: 07/14 Saturday 
   - Scatter plot for testing result vs. original testing dataset score 
   
+
+
+#### 07/18 Test data released 
+
+#### 08/01 Challenge results released 
+
+#### 08/22 Paper submission deadline 
 
 ## Reference Listing
 1. Dehazing Paper - 2018 CVPR-NTIRE workshop 
