@@ -12,6 +12,18 @@ Reference:
 
 
 ## Progress && Important dates
+
+#### Prior work: 
+  1. Generate 1600 HR image dataset 
+    - EnhancedNet bicubic & HR images - DIV2K800 
+    - EDSR HR images - DIV2K800
+  2. F_perceptual score evaluation 
+    - EnhancedNet generated images
+    - EDSR generated HR images 
+    - Original HR images 
+  3. Ma score, NIQE score, Perceptual score plots & evaluation 
+  
+  
 #### 07/13 Friday : 
 #### 1. Build Approximator 
   - Imporve Batch_size ~ 100 batched 
@@ -35,24 +47,31 @@ Reference:
 
 #### 2. Try out different Approximator structure 
 
+
 #### 07/15 Sunday : 
 #### 1. Combine with GAN structure 
   - Modify loss function to include both HR & LR datasets
   - Prepare both types of datasets
   - Start training 
 
+
 #### 07/16 Monday : 
 
+
 #### 07/17 Tuesday : 
+
 
 #### 07/18 Wednesday: 
 #### Test data released 
 
+
 #### 08/01: 
 #### Challenge results released 
 
+
 #### 08/22: 
 #### Paper submission deadline 
+
 
 ## Reference Listing
 1. Dehazing Paper - 2018 CVPR-NTIRE workshop 
