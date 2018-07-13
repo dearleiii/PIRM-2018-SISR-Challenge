@@ -12,7 +12,7 @@ Reference:
 
 
 ## Progress 
-1. Build Approximator 
+####1. Build Approximator 
   - Imporve Batch_size ~ 100 batched 
     -  Based on prior knowledge that batch_size ~ 100 produce good training results 
   - Analogy to the EDSR Discriminator code 
@@ -21,6 +21,6 @@ Reference:
     - Check & Confirm structure is Differentiale 
   - Check training result 
     - Continuous score 
-2. Evaluate Approximator 
+####2. Evaluate Approximator 
   - Training scattor plot 
-3. Test Approximator 
+####3. Test Approximator 
