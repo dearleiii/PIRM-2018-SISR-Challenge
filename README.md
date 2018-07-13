@@ -14,31 +14,34 @@ Reference:
 ## Progress && Important dates
 
 #### Prior work: 
-  [x]1. Generate 1600 HR image dataset 
-    - EnhancedNet bicubic & HR images - DIV2K800 
-    - EDSR HR images - DIV2K800
-  [x]2. F_perceptual score evaluation 
-    - EnhancedNet generated images
-    - EDSR generated HR images 
-    - Original HR images 
-  [x]3. Ma score, NIQE score, Perceptual score plots & evaluation 
+  1. Generate 1600 HR image dataset 
+    - [ ] EnhancedNet bicubic & HR images - DIV2K800 
+    - [ ] EDSR HR images - DIV2K800
+  2. F_perceptual score evaluation 
+    - [ ] EnhancedNet generated images
+    - [ ] EDSR generated HR images 
+    - [ ] Original HR images 
+  3. Ma score, NIQE score, Perceptual score plots & evaluation 
+    - [ ] Ma score plot
+    - [ ] Perceptual score plot 
+    - [ ] NIQE score plot
   
   
 #### 07/13 Friday : 
 #### 1. Build Approximator 
-  - Imporve Batch_size ~ 100 batched 
+  - [ ] Imporve Batch_size ~ 100 batched 
     -  Based on prior knowledge that batch_size ~ 100 produce good training results 
-  - Analogy to the EDSR Discriminator code 
+  - [ ] Analogy to the EDSR Discriminator code 
     - Set up 7 layers;
     - Set up LeadyReLU 
     - Check & Confirm structure is Differentiale 
-  - Check training result 
+  - [ ] Check training result 
     - Continuous score 
 
 #### 2. Evaluate Approximator
-  - Scattor plot for training result vs. original results 
-  - Link scatter plot results with MSE score 
-  - Normalize MESloss() i.e./800
+  - [ ] Scattor plot for training result vs. original results 
+  - [ ] Link scatter plot results with MSE score 
+  - [ ] Normalize MESloss() i.e./800
   
   
 #### 07/14 Saturday : 
