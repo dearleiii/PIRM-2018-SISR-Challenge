@@ -28,3 +28,7 @@ Reference:
 #### 3. Test Approximator 
   - Scatter plot for testing result vs. original testing dataset score 
   
+
+## Reference Listing
+1. Dehazing Paper - 2018 CVPR-NTIRE workshop 
+2. New Techniques for Preserving Global Structure and Denoising in SISR - Duke Prediction Lab 2018 CVPR-NTIRE workshop 
