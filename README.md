@@ -14,14 +14,14 @@ Reference:
 ## Progress && Important dates
 
 #### Prior work: 
-  1. Generate 1600 HR image dataset 
+  [x]1. Generate 1600 HR image dataset 
     - EnhancedNet bicubic & HR images - DIV2K800 
     - EDSR HR images - DIV2K800
-  2. F_perceptual score evaluation 
+  [x]2. F_perceptual score evaluation 
     - EnhancedNet generated images
     - EDSR generated HR images 
     - Original HR images 
-  3. Ma score, NIQE score, Perceptual score plots & evaluation 
+  [x]3. Ma score, NIQE score, Perceptual score plots & evaluation 
   
   
 #### 07/13 Friday : 
