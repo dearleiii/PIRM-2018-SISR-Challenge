@@ -37,7 +37,9 @@ Reference:
 
 #### 07/15 Sunday : 
 #### 1. Combine with GAN structure 
-      
+  - Modify loss function to include both HR & LR datasets
+  - Prepare both types of datasets
+  - Start training 
 
 #### 07/16 Monday : 
 
