@@ -16,15 +16,17 @@ Reference:
 #### Prior work: 
   1. Generate 1600 HR image dataset 
     - [x] EnhancedNet bicubic & HR images - DIV2K800 
-    - [ ] EDSR HR images - DIV2K800
+    - [x] EDSR HR images - DIV2K800
   2. F_perceptual score evaluation 
-    - [ ] EnhancedNet generated images
-    - [ ] EDSR generated HR images 
-    - [ ] Original HR images 
+    - [x] EnhancedNet generated images
+    - [x] EDSR generated HR images 
+    - [x] Original HR images 
   3. Ma score, NIQE score, Perceptual score plots & evaluation 
-    - [ ] Ma score plot
-    - [ ] Perceptual score plot 
-    - [ ] NIQE score plot
+    - [x] Ma score plot
+    - [x] Perceptual score plot 
+    - [x] NIQE score plot
+  4. Approximator CNN-based Pytorch code -v1
+    - [x] 2 Convolution layers, 1 FC layer, regular ReLU 
   
   
 #### 07/13 Friday : 
