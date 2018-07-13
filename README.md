@@ -15,7 +15,7 @@ Reference:
 
 #### Prior work: 
   1. Generate 1600 HR image dataset 
-    - [ ] EnhancedNet bicubic & HR images - DIV2K800 
+    - [x] EnhancedNet bicubic & HR images - DIV2K800 
     - [ ] EDSR HR images - DIV2K800
   2. F_perceptual score evaluation 
     - [ ] EnhancedNet generated images
