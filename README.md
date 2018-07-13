@@ -22,5 +22,9 @@ Reference:
   - Check training result 
     - Continuous score 
 #### 2. Evaluate Approximator 
-  - Training scattor plot 
+  - Scattor plot for training result vs. original results 
+  - Link scatter plot results with MSE score 
+  - Normalize MESloss() i.e./800
 #### 3. Test Approximator 
+  - Scatter plot for testing result vs. original testing dataset score 
+  
