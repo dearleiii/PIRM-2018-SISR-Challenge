@@ -31,10 +31,10 @@ Reference:
   
 #### 07/13 Friday : 
 #### 1. Build Approximator 
-  - [ ] Imporve Batch_size ~ 100 batched 
+  - [x] Imporve Batch_size ~ 100 batched 
     -  Based on prior knowledge that batch_size ~ 100 produce good training results 
-  - [ ] Analogy to the EDSR Discriminator code 
-    - Set up 7 layers;
+  - [x] Analogy to the EDSR Discriminator code 
+    - Set up 7 layers; -> adjust to 5 layers 
     - Set up LeadyReLU 
     - Check & Confirm structure is Differentiale 
   - [ ] Check training result 
@@ -51,7 +51,10 @@ Reference:
   - Scatter plot for testing result vs. original testing dataset score 
 
 #### 2. Try out different Approximator structure 
-
+  - LeakyReLU hyper-parameter
+  - Layer numbers
+  - Compare results of including BatchNorm()
+  - Analysis of FC layers 
 
 #### 07/15 Sunday : 
 #### 1. Combine with GAN structure 
