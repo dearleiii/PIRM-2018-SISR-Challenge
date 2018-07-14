@@ -45,6 +45,7 @@ Reference:
     - Check & Confirm structure is Differentiale 
 
   
+  
 #### 07/14 Saturday : 
 #### Prior work 
   - [ ] Check training result 
@@ -56,14 +57,15 @@ Reference:
   - [ ] Normalize MESloss() i.e./800
   
 #### 2. Test Approximator
-  - Scatter plot for testing result vs. original testing dataset score 
+  - [ ] Scatter plot for testing result vs. original testing dataset score 
 
 #### 3. Try out different Approximator structure 
-  - LeakyReLU hyper-parameter, i.e. != 0.2
-  - Explain the reason for choosing 0.2 is most cases
-  - Layer numbers
-  - Compare results of including BatchNorm(), explain the effect of BatchNorm()
-  - Analysis of FC layers 
+  - [ ] LeakyReLU hyper-parameter, i.e. != 0.2
+  - [ ] Explain the reason for choosing 0.2 is most cases
+  - [ ] Layer numbers
+  - [ ] Compare results of including BatchNorm(), explain the effect of BatchNorm()
+  - [ ] Analysis of FC layers 
+
 
 #### 07/15 Sunday : 
 #### 1. Combine with GAN structure 
@@ -82,9 +84,18 @@ Reference:
 #### Test data released 
 
 
+
+#### 07/25 :
+#### Submission Dealine 
+
+
 #### 08/01: 
 #### Challenge results released 
-
+#### Code reconstruction 
+#### 1. Re-write Dataloader()
+  - Combine if include sub-directories
+  - Solve the '0.png'
+  - Load batches 
 
 #### 08/22: 
 #### Paper submission deadline 
@@ -92,5 +103,6 @@ Reference:
 
 ## Reference Listing
 1. [Intuitive explanation of CNN](https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/) 
-2. Dehazing Paper - 2018 CVPR-NTIRE workshop 
-3. New Techniques for Preserving Global Structure and Denoising in SISR - Duke Prediction Lab 2018 CVPR-NTIRE workshop 
+2. [ ] Dehazing Paper - 2018 CVPR-NTIRE workshop 
+3. [ ] New Techniques for Preserving Global Structure and Denoising in SISR - Duke Prediction Lab 2018 CVPR-NTIRE workshop
+  - Consult authors about trickes that can be applied generally 
