@@ -31,29 +31,38 @@ Reference:
   
 #### 07/13 Friday : 
 #### 1. Build Approximator 
+  - [x] Read & understand EDSR pytorch code structure
+  - [x] Load dataset of size 2400
+    - Combine sub-directory paths 
+    - Solve Dataloader load '0.png' issue 
+      - Current solution: add '0.png' file to edsr sub-directory
+      - [ ] Todo: Re-write Data_loader class
   - [x] Imporve Batch_size ~ 100 batched 
     -  Based on prior knowledge that batch_size ~ 100 produce good training results 
   - [x] Analogy to the EDSR Discriminator code 
     - Set up 7 layers; -> adjust to 5 layers 
     - Set up LeadyReLU 
     - Check & Confirm structure is Differentiale 
+
+  
+#### 07/14 Saturday : 
+#### Prior work 
   - [ ] Check training result 
     - Continuous score 
-
-#### 2. Evaluate Approximator
+  
+#### 1. Evaluate Approximator
   - [ ] Scattor plot for training result vs. original results 
   - [ ] Link scatter plot results with MSE score 
   - [ ] Normalize MESloss() i.e./800
   
-  
-#### 07/14 Saturday : 
-#### 1. Test Approximator
+#### 2. Test Approximator
   - Scatter plot for testing result vs. original testing dataset score 
 
-#### 2. Try out different Approximator structure 
-  - LeakyReLU hyper-parameter
+#### 3. Try out different Approximator structure 
+  - LeakyReLU hyper-parameter, i.e. != 0.2
+  - Explain the reason for choosing 0.2 is most cases
   - Layer numbers
-  - Compare results of including BatchNorm()
+  - Compare results of including BatchNorm(), explain the effect of BatchNorm()
   - Analysis of FC layers 
 
 #### 07/15 Sunday : 
