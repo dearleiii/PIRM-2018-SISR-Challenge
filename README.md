@@ -82,5 +82,6 @@ Reference:
 
 
 ## Reference Listing
-1. Dehazing Paper - 2018 CVPR-NTIRE workshop 
-2. New Techniques for Preserving Global Structure and Denoising in SISR - Duke Prediction Lab 2018 CVPR-NTIRE workshop 
+1. [Intuitive explanation of CNN](https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/) 
+2. Dehazing Paper - 2018 CVPR-NTIRE workshop 
+3. New Techniques for Preserving Global Structure and Denoising in SISR - Duke Prediction Lab 2018 CVPR-NTIRE workshop 
