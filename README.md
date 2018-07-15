@@ -50,6 +50,10 @@ Reference:
 #### Prior work 
   - [ ] Check training result 
     - Continuous score 
+  - [ ] Store training model
+    - Store weights 
+    - Store losses? 
+    - Store final scatter plots
   
 #### 1. Evaluate Approximator
   - [ ] Scattor plot for training result vs. original results 
