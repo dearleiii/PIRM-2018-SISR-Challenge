@@ -47,19 +47,31 @@ Reference:
   
   
 #### 07/14 Saturday : 
-#### Prior work 
-  - [ ] Check training result 
-    - Continuous score 
-    - Training loss plot
+  -  Check training result 
+    - [x] Continuous score 
+  - [x] Store training model
+    - save_state_dict()
+
   - [ ] Store training model
-    - Store weights 
-    - Store losses? 
-    - Store final scatter plots
+    - [x] Store weights 
+    - [ ] Store losses? 
+    - [ ] Store final scatter plots
+  - [x] chsh shell : /bin/bash 
+    - modify ~/home/.profile file to set up env to be /bin/bash 
+    - modify tmux.config file 
+
+
+#### 07/15 Sunday : 
+#### [ ] Prioity Run on GPU
+  - Issue: Runtime error Cuda
+  - Required memory : 12 ~ 50 GB
   
 #### 1. Evaluate Approximator
-  - [ ] Scattor plot for training result vs. original results 
+  - [x] Scattor plot for training result vs. original results 
   - [ ] Link scatter plot results with MSE score 
   - [ ] Normalize MESloss() i.e./800
+  - [ ] Training loss plot
+
   
 #### 2. Test Approximator
   - [ ] Scatter plot for testing result vs. original testing dataset score 
