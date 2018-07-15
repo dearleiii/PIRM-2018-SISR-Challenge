@@ -50,6 +50,7 @@ Reference:
 #### Prior work 
   - [ ] Check training result 
     - Continuous score 
+    - Training loss plot
   - [ ] Store training model
     - Store weights 
     - Store losses? 
