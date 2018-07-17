@@ -62,8 +62,7 @@ Reference:
 
 
 #### 07/15 Sunday : 
-#### [x] Prioity Run on GPU
-  - Issue: Runtime error Cuda
+#### Prioity Run on GPU
   - Required memory : 12 ~ 50 GB
   
 #### 1. Evaluate Approximator
@@ -76,34 +75,19 @@ Reference:
   - [x] Scatter plot for testing result vs. original testing dataset score 
 
 #### 3. Try out different Approximator structure 
-  - [ ] LeakyReLU hyper-parameter, i.e. != 0.2
-  - [ ] Explain the reason for choosing 0.2 is most cases
-  - [ ] Layer numbers
-  - [ ] Compare results of including BatchNorm(), explain the effect of BatchNorm()
-  - [ ] Analysis of FC layers 
 
 
 
 #### 07/16 Monday : 
 #### Write DataParallel for multiple Gpus
-  -     approximator.to(device)
   
 #### Try out baseline model with small dataset size 
-  - 800 inputs 
-  - 3 conv layers 
-  - NDF = 4
 
 
 #### 07/17 Tuesday : 
 
 #### [ ] 1.Experiment log file
 #### [ ] 2.Training data parameter tunning 
-    - Kernel size: 3/4/5 
-    - Convolutional layers 
-    - Batch size 
-    - Epoches 
-    - Whole data set 
-    
 #### [ ] 3.Save models 
 #### [ ] 4. Training / testing loss plot
 #### [ ] 5. Memory requirement analysis 
@@ -111,7 +95,6 @@ Reference:
 #### Combine with GAN structure 
   - Modify loss function to include both HR & LR datasets
   - Prepare both types of datasets
-  - Start training 
 
 #### 07/18 Wednesday: 
 #### Test data released 
