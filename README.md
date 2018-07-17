@@ -79,22 +79,22 @@ Reference:
 
 
 #### 07/16 Monday : 
-#### Write DataParallel for multiple Gpus
+- [ ] Write DataParallel for multiple Gpus
   
-#### Try out baseline model with small dataset size 
+- [ ] Try out baseline model with small dataset size 
 
 
 #### 07/17 Tuesday : 
 
-#### [ ] 1.Experiment log file
-#### [ ] 2.Training data parameter tunning 
-#### [ ] 3.Save models 
-#### [ ] 4. Training / testing loss plot
-#### [ ] 5. Memory requirement analysis 
+- [ ] 1.Experiment log file
+- [ ] 2.Training data parameter tunning 
+- [ ] 3.Save models 
+- [ ] 4. Training / testing loss plot
+- [ ] 5. Memory requirement analysis 
 
 #### Combine with GAN structure 
-  - Modify loss function to include both HR & LR datasets
-  - Prepare both types of datasets
+  - [ ] Modify loss function to include both HR & LR datasets
+  - [ ] Prepare both types of datasets
 
 #### 07/18 Wednesday: 
 #### Test data released 
