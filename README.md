@@ -62,7 +62,7 @@ Reference:
 
 
 #### 07/15 Sunday : 
-#### [ ] Prioity Run on GPU
+#### [x] Prioity Run on GPU
   - Issue: Runtime error Cuda
   - Required memory : 12 ~ 50 GB
   
@@ -70,11 +70,10 @@ Reference:
   - [x] Scattor plot for training result vs. original results 
   - [ ] Link scatter plot results with MSE score 
   - [ ] Normalize MESloss() i.e./800
-  - [ ] Training loss plot
 
   
 #### 2. Test Approximator
-  - [ ] Scatter plot for testing result vs. original testing dataset score 
+  - [x] Scatter plot for testing result vs. original testing dataset score 
 
 #### 3. Try out different Approximator structure 
   - [ ] LeakyReLU hyper-parameter, i.e. != 0.2
@@ -84,18 +83,35 @@ Reference:
   - [ ] Analysis of FC layers 
 
 
-#### 07/15 Sunday : 
-#### 1. Combine with GAN structure 
-  - Modify loss function to include both HR & LR datasets
-  - Prepare both types of datasets
-  - Start training 
-
 
 #### 07/16 Monday : 
+#### Write DataParallel for multiple Gpus
+  -     approximator.to(device)
+  
+#### Try out baseline model with small dataset size 
+  - 800 inputs 
+  - 3 conv layers 
+  - NDF = 4
 
 
 #### 07/17 Tuesday : 
 
+#### [ ] 1.Experiment log file
+#### [ ] 2.Training data parameter tunning 
+    - Kernel size: 3/4/5 
+    - Convolutional layers 
+    - Batch size 
+    - Epoches 
+    - Whole data set 
+    
+#### [ ] 3.Save models 
+#### [ ] 4. Training / testing loss plot
+#### [ ] 5. Memory requirement analysis 
+
+#### Combine with GAN structure 
+  - Modify loss function to include both HR & LR datasets
+  - Prepare both types of datasets
+  - Start training 
 
 #### 07/18 Wednesday: 
 #### Test data released 
