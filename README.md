@@ -79,9 +79,9 @@ Reference:
 
 
 #### 07/16 Monday : 
-- [ ] Write DataParallel for multiple Gpus
+- [x] Write DataParallel for multiple Gpus
   
-- [ ] Try out baseline model with small dataset size 
+- [x] Try out baseline model with small dataset size 
 
 
 #### 07/17 Tuesday : 
