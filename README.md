@@ -100,6 +100,7 @@ Reference:
 - [ ] Check model reloading 
 
 #### Combine with GAN structure 
+  - [ ] Confirm loss function formula 
   - [ ] Modify loss function to include both HR & LR datasets
   - [ ] Understand where is the regularization terms
   - [ ] Find out how to input the model 
