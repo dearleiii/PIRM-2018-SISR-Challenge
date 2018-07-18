@@ -67,7 +67,6 @@ Reference:
   
 #### 1. Evaluate Approximator
   - [x] Scattor plot for training result vs. original results 
-  - [ ] Link scatter plot results with MSE score 
   - [ ] Normalize MESloss() i.e./800
 
   
@@ -86,19 +85,35 @@ Reference:
 
 #### 07/17 Tuesday : 
 
-- [ ] 1.Experiment log file
-- [ ] 2.Training data parameter tunning 
-- [ ] 3.Save models 
-- [ ] 4. Training / testing loss plot
+- [x] 1.Experiment log file
+- [x] 2.Training data parameter tunning 
+- [x] 3.Save models 
+- [x] 4. Training loss plot
 - [ ] 5. Memory requirement analysis 
 
-#### Combine with GAN structure 
-  - [ ] Modify loss function to include both HR & LR datasets
-  - [ ] Prepare both types of datasets
 
 #### 07/18 Wednesday: 
 #### Test data released 
 
+#### Model refine
+- [ ] Testing loss plot
+- [ ] Check model reloading 
+
+#### Combine with GAN structure 
+  - [ ] Modify loss function to include both HR & LR datasets
+  - [ ] Understand where is the regularization terms
+  - [ ] Find out how to input the model 
+
+
+#### 07/19 Wednesday: 
+#### Testing final model 
+
+
+#### 07/22 Sunday 
+#### Trial submission 
+
+
+#### 07/23 Final updates metting 
 
 
 #### 07/25 :
