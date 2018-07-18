@@ -26,6 +26,8 @@
   epoches: 30
   
 ##### Training loss = 41.66
+##### Progress: Compute1 running epoches = 100
+
 
 
 #### Model3: 
@@ -40,3 +42,4 @@
   epoches: 100
   
 ##### Training loss = ??
+##### Progress: Compute2 running 
