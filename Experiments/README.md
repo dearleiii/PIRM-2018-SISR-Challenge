@@ -1,126 +1,27 @@
-This is a task listing 
-
-
-
-## Progress && Important dates
-
-#### Prior work: 
-  1. Generate 1600 HR image dataset 
-    - [x] EnhancedNet bicubic & HR images - DIV2K800 
-    - [x] EDSR HR images - DIV2K800
-  2. F_perceptual score evaluation 
-    - [x] EnhancedNet generated images
-    - [x] EDSR generated HR images 
-    - [x] Original HR images 
-  3. Ma score, NIQE score, Perceptual score plots & evaluation 
-    - [x] Ma score plot
-    - [x] Perceptual score plot 
-    - [x] NIQE score plot
-  4. Approximator CNN-based Pytorch code -v1
-    - [x] 2 Convolution layers, 1 FC layer, regular ReLU 
+## Model1
+#### File names: 
+  ndf8_model.py
+  apxm_ndf8k3.py
   
+#### Hyper-parameters: 
+  ndf = 8
+  conv layers = 3
+  kernal size = 3, 4, 4, 
+  batch_size = 50
+  epoches: 40
   
-#### 07/13 Friday : 
-#### 1. Build Approximator 
-  - [x] Read & understand EDSR pytorch code structure
-  - [x] Load dataset of size 2400
-    - Combine sub-directory paths 
-    - Solve Dataloader load '0.png' issue 
-      - Current solution: add '0.png' file to edsr sub-directory
-      - [ ] Todo: Re-write Data_loader class
-  - [x] Imporve Batch_size ~ 100 batched 
-    -  Based on prior knowledge that batch_size ~ 100 produce good training results 
-  - [x] Analogy to the EDSR Discriminator code 
-    - Set up 7 layers; -> adjust to 5 layers 
-    - Set up LeadyReLU 
-    - Check & Confirm structure is Differentiale 
+#### Training loss = 18.66
 
+## Model2: 
+#### File names: 
+  test_loss.py
+  apxm_conv3.py
   
+#### Hyper-parameters: 
+  ndf = 4
+  conv layers = 3
+  kernal size = 4, 4, 4, 
+  batch_size = 50
+  epoches: 30
   
-#### 07/14 Saturday : 
-  -  Check training result 
-    - [x] Continuous score 
-  - [x] Store training model
-    - save_state_dict()
-
-  - [ ] Store training model
-    - [x] Store weights 
-    - [ ] Store losses? 
-    - [ ] Store final scatter plots
-  - [x] chsh shell : /bin/bash 
-    - modify ~/home/.profile file to set up env to be /bin/bash 
-    - modify tmux.config file 
-
-
-#### 07/15 Sunday : 
-#### [x] Prioity Run on GPU
-  - Issue: Runtime error Cuda
-  - Required memory : 12 ~ 50 GB
-  
-#### 1. Evaluate Approximator
-  - [x] Scattor plot for training result vs. original results 
-  - [ ] Link scatter plot results with MSE score 
-  - [ ] Normalize MESloss() i.e./800
-
-  
-#### 2. Test Approximator
-  - [x] Scatter plot for testing result vs. original testing dataset score 
-
-#### 3. Try out different Approximator structure 
-  - [ ] LeakyReLU hyper-parameter, i.e. != 0.2
-  - [ ] Explain the reason for choosing 0.2 is most cases
-  - [ ] Layer numbers
-  - [ ] Compare results of including BatchNorm(), explain the effect of BatchNorm()
-  - [ ] Analysis of FC layers 
-
-
-
-#### 07/16 Monday : 
-#### Write DataParallel for multiple Gpus
-  -     approximator.to(device)
-  
-#### Try out baseline model with small dataset size 
-  - 800 inputs 
-  - 3 conv layers 
-  - NDF = 4
-
-
-#### 07/17 Tuesday : 
-
-#### [ ] 1.Experiment log file
-#### [ ] 2.Training data parameter tunning 
-    - Kernel size: 3/4/5 
-    - Convolutional layers 
-    - Batch size 
-    - Epoches 
-    - Whole data set 
-    
-#### [ ] 3.Save models 
-#### [ ] 4. Training / testing loss plot
-#### [ ] 5. Memory requirement analysis 
-
-#### Combine with GAN structure 
-  - Modify loss function to include both HR & LR datasets
-  - Prepare both types of datasets
-  - Start training 
-
-#### 07/18 Wednesday: 
-#### Test data released 
-
-
-
-#### 07/25 :
-#### Submission Dealine 
-
-
-#### 08/01: 
-#### Challenge results released 
-#### Code reconstruction 
-#### 1. Re-write Dataloader()
-  - Combine if include sub-directories
-  - Solve the '0.png'
-  - Load batches 
-
-#### 08/22: 
-#### Paper submission deadline 
-
+#### Training loss = 41.66
