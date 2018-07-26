@@ -15,47 +15,24 @@ Reference:
 
 #### Prior work: 
   1. Generate 1600 HR image dataset 
-    - [x] EnhancedNet bicubic & HR images - DIV2K800 
-    - [x] EDSR HR images - DIV2K800
+
   2. F_perceptual score evaluation 
-    - [x] EnhancedNet generated images
-    - [x] EDSR generated HR images 
-    - [x] Original HR images 
+    
   3. Ma score, NIQE score, Perceptual score plots & evaluation 
-    - [x] Ma score plot
-    - [x] Perceptual score plot 
-    - [x] NIQE score plot
+   
   4. Approximator CNN-based Pytorch code -v1
     - [x] 2 Convolution layers, 1 FC layer, regular ReLU 
   
   
 #### 07/13 Friday : 
 #### 1. Build Approximator 
-  - [x] Read & understand EDSR pytorch code structure
-  - [x] Load dataset of size 2400
-    - Combine sub-directory paths 
-    - Solve Dataloader load '0.png' issue 
-      - Current solution: add '0.png' file to edsr sub-directory
-      - [ ] Todo: Re-write Data_loader class
-  - [x] Imporve Batch_size ~ 100 batched 
-    -  Based on prior knowledge that batch_size ~ 100 produce good training results 
-  - [x] Analogy to the EDSR Discriminator code 
-    - Set up 7 layers; -> adjust to 5 layers 
-    - Set up LeadyReLU 
-    - Check & Confirm structure is Differentiale 
-
-  
   
 #### 07/14 Saturday : 
   -  Check training result 
     - [x] Continuous score 
   - [x] Store training model
     - save_state_dict()
-
   - [ ] Store training model
-    - [x] Store weights 
-    - [ ] Store losses? 
-    - [ ] Store final scatter plots
   - [x] chsh shell : /bin/bash 
     - modify ~/home/.profile file to set up env to be /bin/bash 
     - modify tmux.config file 
@@ -67,8 +44,6 @@ Reference:
   
 #### 1. Evaluate Approximator
   - [x] Scattor plot for training result vs. original results 
-  - [ ] Normalize MESloss() i.e./800
-
   
 #### 2. Test Approximator
   - [x] Scatter plot for testing result vs. original testing dataset score 
@@ -83,21 +58,10 @@ Reference:
 - [x] Try out baseline model with small dataset size 
 
 
-#### 07/17 Tuesday : 
-
-- [x] 1.Experiment log file
-- [x] 2.Training data parameter tunning 
-- [x] 3.Save models 
-- [x] 4. Training loss plot
-- [ ] 5. Memory requirement analysis 
-
-
 #### 07/18 Wednesday: 
 #### Test data released 
 
 #### Model refine
-- [ ] Testing loss plot
-- [ ] Check model reloading 
 
 #### Combine with GAN structure 
   - [ ] Confirm loss function formula 
