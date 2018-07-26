@@ -24,11 +24,8 @@ Reference:
     - [x] 2 Convolution layers, 1 FC layer, regular ReLU 
   
   
-#### 07/13 Friday : 
 #### 1. Build Approximator 
-  
-#### 07/14 Saturday : 
-  -  Check training result 
+    -  Check training result 
     - [x] Continuous score 
   - [x] Store training model
     - save_state_dict()
@@ -37,52 +34,36 @@ Reference:
     - modify ~/home/.profile file to set up env to be /bin/bash 
     - modify tmux.config file 
 
-
-#### 07/15 Sunday : 
-#### Prioity Run on GPU
+#### 2. Prioity Run on GPU
   - Required memory : 12 ~ 50 GB
   
-#### 1. Evaluate Approximator
+#### 3. Evaluate Approximator
   - [x] Scattor plot for training result vs. original results 
-  
-#### 2. Test Approximator
   - [x] Scatter plot for testing result vs. original testing dataset score 
 
-#### 3. Try out different Approximator structure 
-
-
-
-#### 07/16 Monday : 
-- [x] Write DataParallel for multiple Gpus
-  
-- [x] Try out baseline model with small dataset size 
+#### 4. Try out different Approximator structure 
+  - [x] Write DataParallel for multiple Gpus
+  - [x] Try out baseline model with small dataset size 
 
 
 #### 07/18 Wednesday: 
 #### Test data released 
 
-#### Model refine
+#### 4. Model refine
 
-#### Combine with GAN structure 
-  - [ ] Confirm loss function formula 
-  - [ ] Modify loss function to include both HR & LR datasets
-  - [ ] Understand where is the regularization terms
-  - [ ] Find out how to input the model 
-
-
-#### 07/19 Wednesday: 
-#### Testing final model 
-
-
-#### 07/22 Sunday 
-#### Trial submission 
-
-
-#### 07/23 Final updates metting 
+#### 5. Combine with GAN structure 
+  - [x] Confirm loss function formula 
+  - [x] Modify loss function to include both HR & LR datasets
+  - [x] Understand where is the regularization terms
+  - [x] Find out how to input the model 
 
 
 #### 07/25 :
 #### Submission Dealine 
+
+
+#### 07/26 :
+#### Fact-sheet submission   
 
 
 #### 08/01: 
