@@ -81,8 +81,18 @@ Reference:
 
 ![Model results of the proposed objective function with different weighted combinations](https://raw.githubusercontent.com/dearleiii/PIRM-2018-SISR-Challenge/master/result_images/fper_para.png)
 
+Model results of the proposed objective function with different weighted combinations. The red point is the StoA EDSR+ result. Better perceptual score is achieved while loosing RMSE precision quality slightly.
 
-The red point is the StoA EDSR+ result. Better perceptual score is achieved while loosing RMSE precision quality slightly.
+
+![Sample result of PRIM dataset](https://raw.githubusercontent.com/dearleiii/PIRM-2018-SISR-Challenge/master/result_images/pirm_Res_sample.png)
+
+Sample result of PRIM dataset generated from different algorithms. Obvious artifact can be observed in EnhancedNet result. EDSR model resumes training the Fper objective function does not introduce artifacts. Image source: PIRM100 3.png
+
+
+![Artifact generated](https://raw.githubusercontent.com/dearleiii/PIRM-2018-SISR-Challenge/master/result_images/pirm_arti2.png)
+
+Artifact generated when set Fper weight to be large, here weight = 10.
+Artifact does not appear when the weight is smaller. Image source: PIRM100 3.png
 
 
 ## Reference Listing
