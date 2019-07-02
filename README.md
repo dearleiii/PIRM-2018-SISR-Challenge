@@ -23,7 +23,20 @@ Reference:
   4. Approximator CNN-based Pytorch code -v1
     - [x] 2 Convolution layers, 1 FC layer, regular ReLU 
   
-  
+##### Score evaluation results 
+
+![Ma score](https://raw.githubusercontent.com/dearleiii/PIRM-2018-SISR-Challenge/master/result_images/ma_score.png)
+
+![Niqe score](https://raw.githubusercontent.com/dearleiii/PIRM-2018-SISR-Challenge/master/result_images/niqe_score.png)
+
+![Fper score](https://raw.githubusercontent.com/dearleiii/PIRM-2018-SISR-Challenge/master/result_images/fper_score.png)
+
+It can be observed from the histogram distribution that for Ma index alone,
+EnhancedNet and HR images follows similar distribution pattern. Both have higher
+score as compared to EDSR. For the NIQE index alone, HR images have generally
+lower score distribution.
+
+
 #### 1. Build Approximator 
     -  Check training result 
     - [x] Continuous score 
@@ -33,6 +46,12 @@ Reference:
   - [x] chsh shell : /bin/bash 
     - modify ~/home/.profile file to set up env to be /bin/bash 
     - modify tmux.config file 
+    
+  
+##### Approximator training results 
+
+![Scatter score](https://raw.githubusercontent.com/dearleiii/PIRM-2018-SISR-Challenge/master/result_images/scatter_plot_epoch126.png)
+
 
 #### 2. Prioity Run on GPU
   - Required memory : 12 ~ 50 GB
