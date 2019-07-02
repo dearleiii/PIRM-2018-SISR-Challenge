@@ -79,7 +79,8 @@ Reference:
 
 ## Priliminary results 
 
-![Model results of the proposed objective function with different weighted combinations](https://github.com/dearleiii/PIRM-2018-SISR-Challenge/tree/master/result_images/fper_png)
+![Model results of the proposed objective function with different weighted combinations](https://raw.githubusercontent.com/dearleiii/PIRM-2018-SISR-Challenge/master/result_images/fper_para.png)
+
 
 The red point is the StoA EDSR+ result. Better perceptual score is achieved while loosing RMSE precision quality slightly.
 
