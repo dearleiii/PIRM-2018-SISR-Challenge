@@ -77,6 +77,12 @@ Reference:
 #### 08/22: 
 #### Paper submission deadline 
 
+## Priliminary results 
+
+![Model results of the proposed objective function with different weighted combinations](https://github.com/dearleiii/PIRM-2018-SISR-Challenge/tree/master/result_images/fper_png)
+
+The red point is the StoA EDSR+ result. Better perceptual score is achieved while loosing RMSE precision quality slightly.
+
 
 ## Reference Listing
 1. [Intuitive explanation of CNN](https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/) 
